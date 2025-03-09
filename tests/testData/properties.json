@@ -1,0 +1,89 @@
+{
+    "properties": [
+      {
+        "title": "Modern Luxury Villa",
+        "address": "123 Ocean View Dr",
+        "price": "2,500,000",
+        "bedrooms": "5",
+        "bathrooms": "4.5",
+        "area": "4500",
+        "url": "http://localhost:5173/properties/p1",
+        "description": "Stunning modern villa with panoramic ocean views and high-end finishes throughout. Features include a gourmet kitchen, home theater, infinity pool, and smart home technology.",
+        "status": "SALE",
+        "availability": "AVAILABLE",
+        "agent": "Sarah Wilson",
+        "agentTitle": "Licensed Real Estate Agent"
+      },
+      {
+        "title": "Downtown Penthouse",
+        "address": "456 City Center Blvd",
+        "price": "1,800,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "area": "2800",
+        "url": "http://localhost:5173/properties/p2",
+        "description": "Luxurious penthouse apartment with stunning city views and private rooftop terrace. Featuring floor-to-ceiling windows, designer kitchen, and premium amenities.",
+        "status": "SALE",
+        "availability": "AVAILABLE",
+        "agent": "David Chen",
+        "agentTitle": "Licensed Real Estate Agent"
+      },
+      {
+        "title": "Cozy Family Home",
+        "address": "789 Maple St",
+        "price": "850,000",
+        "bedrooms": "4",
+        "bathrooms": "2.5",
+        "area": "2200",
+        "url": "http://localhost:5173/properties/p3",
+        "description": "Beautiful family home in a quiet neighborhood with great schools nearby. Features updated kitchen, spacious backyard, and finished basement.",
+        "status": "SALE",
+        "availability": "AVAILABLE",
+        "agent": "Emily Brown",
+        "agentTitle": "Licensed Real Estate Agent"
+      },
+      {
+        "title": "Luxury Beachfront Condo",
+        "address": "321 Seaside Ave",
+        "price": "1,200,000",
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "area": "1800",
+        "url": "http://localhost:5173/properties/p4",
+        "description": "Spectacular beachfront condo with unobstructed ocean views. Features high-end appliances, private balcony, and resort-style amenities.",
+        "status": "SALE",
+        "availability": "AVAILABLE",
+        "agent": "Michael Torres",
+        "agentTitle": "Licensed Real Estate Agent"
+      },
+      {
+        "title": "Modern Office Space",
+        "address": "567 Business Center Dr",
+        "price": "2,000,000",
+        "bedrooms": "0",
+        "bathrooms": "4",
+        "area": "5000",
+        "url": "http://localhost:5173/properties/p5",
+        "description": "Prime commercial office space in downtown business district. Open floor plan, meeting rooms, and state-of-the-art facilities.",
+        "status": "COMMERCIAL",
+        "availability": "AVAILABLE",
+        "agent": "David Chen",
+        "agentTitle": "Licensed Real Estate Agent"
+      },
+      {
+        "title": "Luxury Townhouse",
+        "address": "789 Urban Lane",
+        "price": "950,000",
+        "bedrooms": "3",
+        "bathrooms": "2.5",
+        "area": "2000",
+        "url": "http://localhost:5173/properties/p6",
+        "description": "Contemporary townhouse with rooftop terrace and city views. Features modern finishes, private garage, and smart home integration.",
+        "status": "SALE",
+        "availability": "AVAILABLE",
+        "agent": "Jessica Lee",
+        "agentTitle": "Licensed Real Estate Agent"
+      }
+    ]
+  }
+  

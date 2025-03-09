@@ -1,0 +1,42 @@
+{
+    "validUser": {
+      "email": "test@example.com",
+      "password": "Test123!",
+      "rememberMe": true,
+      "profileAltText": "John Doe"
+    },
+    "validAgent": {
+      "email": "agent@example.com",
+      "password": "Test123!",
+      "rememberMe": true,
+      "profileAltText": "Sarah Wilson"
+    },
+    "validAdmin": {
+      "email": "admin@example.com",
+      "password": "Test123!",
+      "rememberMe": true,
+      "profileAltText": "Mike Johnson"
+    },
+    "invalidEmailFormat": {
+      "email": "invalid@email",
+      "password": "Test123!",
+      "rememberMe": true,
+      "expectedError": "Invalid email address"
+    },
+    "shortPassword": {
+      "email": "test@example.com",
+      "password": "short",
+      "rememberMe": true,
+      "expectedError": "Password must be at least 6 characters"
+    },
+    "emptyFields": {
+      "email": "",
+      "password": "",
+      "rememberMe": false,
+      "expectedError": [
+        "Invalid email address",
+        "Password must be at least 6 characters"
+      ]
+    }
+  }
+  

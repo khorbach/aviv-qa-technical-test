@@ -1,0 +1,16 @@
+{
+    "loggedOutUser": {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "+1234567890",
+      "message": "I am interested in this property. Please contact me."
+    },
+    "validation": {
+      "minMessageLength": 10,
+      "messageError": "Message must be at least 10 characters.",
+      "nameError": "Name is required.",
+      "emailError": "Valid email is required.",
+      "phoneError": "Valid phone number is required."
+    }
+  }
+  

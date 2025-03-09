@@ -1,0 +1,25 @@
+{
+    "validUser": {
+      "dashboardItems": [
+        "Saved Properties",
+        "Active Alerts",
+        "Recent Views"
+      ]
+    },
+    "validAgent": {
+      "dashboardItems": [
+        "Active Listings",
+        "Total Inquiries",
+        "Messages"
+      ]
+    },
+    "validAdmin": {
+      "dashboardItems": [
+        "Total Users",
+        "Properties",
+        "Agents",
+        "Active Listings"
+      ]
+    }
+  }
+  

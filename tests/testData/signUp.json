@@ -1,0 +1,117 @@
+{
+  "validUserHomeBuyer": {
+    "fullName": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "1234567890",
+    "accountType": "user",
+    "password": "Test@123",
+    "confirmPassword": "Test@123"
+  },
+  "validUserRealEstateAgent": {
+    "fullName": "Sarah Johnson",
+    "email": "sarahagent@example.com",
+    "phone": "5558889999",
+    "accountType": "agent",
+    "password": "StrongPass@2024",
+    "confirmPassword": "StrongPass@2024"
+  },
+  "existingUser": {
+    "fullName": "Jane Smith",
+    "email": "test@example.com",
+    "phone": "0987654321",
+    "accountType": "user",
+    "password": "Test123!",
+    "confirmPassword": "Test123!"
+  },
+  "invalidNameShort": {
+    "fullName": "J",
+    "email": "shortname@example.com",
+    "phone": "1234567890",
+    "accountType": "user",
+    "password": "ValidPass@123",
+    "confirmPassword": "ValidPass@123",
+    "expectedErrorMessages": [
+      "Name must be at least 2 characters"
+    ]
+  },
+  "invalidEmailFormat": {
+    "fullName": "Invalid Email",
+    "email": "invalid@email",
+    "phone": "1234567890",
+    "accountType": "user",
+    "password": "ValidPass@123",
+    "confirmPassword": "ValidPass@123",
+    "expectedErrorMessages": [
+      "Invalid email address"
+    ]
+  },
+  "invalidPhoneNumber": {
+    "fullName": "Invalid Phone",
+    "email": "validemail@example.com",
+    "phone": "abcd1234",
+    "accountType": "user",
+    "password": "ValidPass@123",
+    "confirmPassword": "ValidPass@123",
+    "expectedErrorMessages": [
+      "Please enter a valid phone number"
+    ]
+  },
+  "weakPasswordUser": {
+    "fullName": "Weak Password User",
+    "email": "weakuser@example.com",
+    "phone": "1122334455",
+    "accountType": "agent",
+    "password": "12345",
+    "confirmPassword": "12345",
+    "expectedErrorMessages": [
+      "Password must be at least 8 characters"
+    ]
+  },
+  "shortPasswordUser": {
+    "fullName": "Short Password",
+    "email": "shortpass@example.com",
+    "phone": "9876543210",
+    "accountType": "user",
+    "password": "Test1",
+    "confirmPassword": "Test1",
+    "expectedErrorMessages": [
+      "Password must be at least 8 characters"
+    ]
+  },
+  "passwordsDontMatch": {
+    "fullName": "Test User",
+    "email": "testuser@example.com",
+    "phone": "1234567890",
+    "accountType": "user",
+    "password": "Test@123",
+    "confirmPassword": "Test@124",
+    "expectedErrorMessages": [
+      "Passwords don't match"
+    ]
+  },
+  "passwordNoSpecialCharacter": {
+    "fullName": "Test User",
+    "email": "testuser@example.com",
+    "phone": "1234567890",
+    "accountType": "user",
+    "password": "Test1234",
+    "confirmPassword": "Test1234",
+    "expectedErrorMessages": [
+      "Password must contain at least one special character"
+    ]
+  },
+  "missingFieldsUser": {
+    "fullName": "",
+    "email": "",
+    "phone": "",
+    "accountType": "user",
+    "password": "",
+    "confirmPassword": "",
+    "expectedErrorMessages": [
+      "Name must be at least 2 characters",
+      "Invalid email address",
+      "Please enter a valid phone number",
+      "Password must be at least 8 characters"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+name: Run Playwright UI Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'  # Run tests every day at midnight UTC (00:00)
+
+jobs:
+  run-ui-tests:
+    runs-on: ubuntu-latest  # You can change this to another OS like windows-latest or macos-latest if needed.
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install  # Install dependencies for your project
+
+      - name: Install Playwright browsers
+        run: |
+          npx playwright install  # Install the required browsers for Playwright
+
+      - name: Run Playwright UI tests
+        run: |
+          npm test  # Run your UI tests (assuming your tests are defined under npm test)
+
+      - name: Install Allure command line
+        run: |
+          npm install -g allure-commandline --save-dev  # Install Allure command line
+
+      - name: Generate Allure Report
+        run: |
+          allure generate allure-results --clean  # Generate the Allure report
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: allure-report
+          path: allure-results/

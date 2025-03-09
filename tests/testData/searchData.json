@@ -1,0 +1,89 @@
+{
+    "searchTests": [
+      {
+        "name": "Properties by location and price range",
+        "filters": {
+          "location": "Ocean View",
+          "minPrice": "500000",
+          "maxPrice": "3000000",
+          "type": "All Types",
+          "bedrooms": "4+ Beds"
+        },
+        "expectedResults": ["Modern Luxury Villa"],
+        "expectedMessage": null
+      },
+      {
+        "name": "Properties by location, price range and type filter",
+        "filters": {
+          "location": "City Center",
+          "minPrice": "1000000",
+          "maxPrice": "2000000",
+          "type": "For Sale",
+          "bedrooms": "Any Beds"
+        },
+        "expectedResults": ["Downtown Penthouse"],
+        "expectedMessage": null
+      },
+      {
+        "name": "Properties by type filter and price range",
+        "filters": {
+          "location": "",
+          "minPrice": "0",
+          "maxPrice": "2000000",
+          "type": "Commercial",
+          "bedrooms": "Any Beds"
+        },
+        "expectedResults": ["Modern Office Space"],
+        "expectedMessage": null
+      },
+      {
+        "name": "Properties by price range and no matches",
+        "filters": {
+          "location": "",
+          "minPrice": "5000000",
+          "maxPrice": "10000000",
+          "type": "All Types",
+          "bedrooms": "Any Beds"
+        },
+        "expectedResults": [],
+        "expectedMessage": "No properties match your search criteria."
+      },
+      {
+        "name": "Properties by bedrooms filter",
+        "filters": {
+          "location": "",
+          "minPrice": "",
+          "maxPrice": "",
+          "type": "All Types",
+          "bedrooms": "3+ Beds"
+        },
+        "expectedResults": ["Modern Luxury Villa","Downtown Penthouse","Cozy Family Home","Luxury Townhouse"],
+        "expectedMessage": null
+      },
+      {
+        "name": "Properties with an invalid location",
+        "filters": {
+          "location": "Nonexistent Location",
+          "minPrice": "",
+          "maxPrice": "",
+          "type": "All Types",
+          "bedrooms": "Any Beds"
+        },
+        "expectedResults": [],
+        "expectedMessage": "No properties match your search criteria."
+      },
+      {
+        "name": "Properties by type filter",
+        "filters": {
+          "location": "",
+          "minPrice": "",
+          "maxPrice": "",
+          "type": "For Rent",
+          "bedrooms": "Any Beds"
+        },
+       "expectedResults": [],
+        "expectedMessage": "No properties match your search criteria."
+      }
+    ]
+  }
+  

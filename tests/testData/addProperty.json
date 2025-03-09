@@ -1,0 +1,16 @@
+{
+    "validProperty": {
+        "title": "Beautiful Family Home",
+        "price": "450000",
+        "bedrooms": "4",
+        "area": "2000",
+        "bathrooms": "2.5",
+        "yearBuilt": "2015",
+        "address": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "zipCode": "62704",
+        "description": "A spacious family home with modern amenities.",
+        "imagePath": "assets/sample-property.jpg"
+    }
+}
